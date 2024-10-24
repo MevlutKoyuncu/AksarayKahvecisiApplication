@@ -62,6 +62,33 @@ namespace DataAccessLayer
             }
         }
 
+        public bool UyeEkle(Yonetici yon)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Yonetici(Isim, Soyisim, Mail, KullaniciAdi, Sifre, YoneticiTur) VALUES(@isim, @soyisim, @mail, @kullaniciAdi, @sifre, @yoneticiTur)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isim", yon.Isim);
+                cmd.Parameters.AddWithValue("@soyisim", yon.Soyisim);
+                cmd.Parameters.AddWithValue("@mail", yon.Mail);
+                cmd.Parameters.AddWithValue("@kullaniciAdi", yon.KullaniciAdi);
+                cmd.Parameters.AddWithValue("@sifre", yon.Sifre);
+                cmd.Parameters.AddWithValue("@yoneticiTur", yon.YoneticiTur);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
         #endregion
 
         #region Ürün Metotları
@@ -227,8 +254,8 @@ namespace DataAccessLayer
 
         public List<Alicilar> AlicilariGetir()
         {
-        
-        List<Alicilar> alicilar = new List<Alicilar>();
+
+            List<Alicilar> alicilar = new List<Alicilar>();
             try
             {
                 cmd.CommandText = "SELECT AktifMi, ID, Isim, GorusulenKisi, Telefon, Sehir, Adres FROM Alicilar";
@@ -237,7 +264,7 @@ namespace DataAccessLayer
                 SqlDataReader okuyucu = cmd.ExecuteReader();
                 Alicilar al;
                 while (okuyucu.Read())
-                { 
+                {
                     al = new Alicilar();
                     al.AktifMi = okuyucu.GetBoolean(0);
                     al.AktifMiStr = okuyucu.GetBoolean(0) ? "Aktif" : "Pasif";
@@ -288,7 +315,63 @@ namespace DataAccessLayer
             }
         }
 
+        public bool AliciGuncelle(Alicilar al)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Alicilar SET Isim=@isim, AktifMi=@aktifmi WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", al.ID);
+                cmd.Parameters.AddWithValue("@isim", al.Isim);
+                cmd.Parameters.AddWithValue("@durum", al.AktifMi);
+                cmd.Parameters.AddWithValue("@gorusulenKisi", al.GorusulenKisi);
+                cmd.Parameters.AddWithValue("@telefon", al.Telefon);
+                cmd.Parameters.AddWithValue("@durum", al.AktifMi);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
+        #endregion
+
+        #region Üye Metotları
+
+        public bool SiparisOlustur()
+        {
+            //Database güncellemesi gerekli gibi
+            try
+            {
+                cmd.CommandText = "INSERT INTO Siparisler(Isim, Satici, UreticiUlke, Fiyat, Stok, Satistami) VALUES(@isim, @satici, @ureticiUlke, @fiyat, @stok, @satistami)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isim", ur.Isim);
+                cmd.Parameters.AddWithValue("@satici", ur.Satici);
+                cmd.Parameters.AddWithValue("@ureticiUlke", ur.UreticiUlke);
+                cmd.Parameters.AddWithValue("@fiyat", ur.Fiyat);
+                cmd.Parameters.AddWithValue("@stok", ur.Stok);
+                cmd.Parameters.AddWithValue("@satistami", ur.Satistami);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
 
         #endregion
     }
