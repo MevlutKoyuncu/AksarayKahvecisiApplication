@@ -1,17 +1,32 @@
-﻿*,h1,h2,h3,h4,h5,h6{
-    margin:0px; padding:0px;
-}
-body {
-    
-}
-.ustmenu {
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
 }
 
+body {
+    float: left;
+    font-family:Calibri;
+}
+
+.ustmenu {
+    width: 250px;
+    min-height:150ps;
+}
+    
+
 .kullanicialani {
+    float:left;
 }
 
 .solmenu {
-  
+    border: 1px solid red;
+    background-color: #BF784E;
+    width: 230px;
+    min-height: 840px;
+    float: left;
 }
-
-   
+.icerik {
+    float: left;
+    width: 80%;
+    padding: 20px;
+}

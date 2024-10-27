@@ -26,7 +26,10 @@
             <a href="#">Raporlamalar</a>
             <a href="#">Duyuru Ayarla</a>
             <a href="#">Üyelikler</a>
-
+            <div class="icerik">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
