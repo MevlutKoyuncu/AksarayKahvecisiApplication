@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YoneticiMaster.master.cs" Inherits="AksarayKahvecisiApplication.AdminLoginPanel.YoneticiMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Aksaray Kahvecisi Yönetici Paneli</title>
+    <link href="YoneticiCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ustmenu">
+            <div class="kullaniciAlani">
+                <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click" Text="Güvenli Çıkış" CssClass="link"></asp:LinkButton>
+                <asp:Label ID="lbl_kullanici" runat="server" Text="kullanıcı"></asp:Label>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="solmenu">
+            <a href="Default.aspx">Anasayfa</a>
+            <a href="#">Ürünler Listesi</a>
+            <a href="#">Ürünleri Düzenle</a>
+            <a href="#">Siparişler</a>
+            <a href="#">Raporlamalar</a>
+            <a href="#">Duyuru Ayarla</a>
+            <a href="#">Üyelikler</a>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

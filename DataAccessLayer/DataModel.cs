@@ -23,43 +23,37 @@ namespace DataAccessLayer
         public DataModel()
         {
             con = new SqlConnection(ConnectionStrings.ConStr);
+            cmd = con.CreateCommand();
         }
 
         #region Yönetici Metotları
 
         public Yonetici YoneticiGiris(string mail, string sifre)
         {
-            try
-            {
-                cmd.CommandText = "SELECT Y.ID, Y.YoneticiTur_ID, YT.Isim, Y.Isim, Y.Soyisim, Y.Mail, Y.Sifre, Y.KullaniciAdi, Y.AktifMi FROM Yoneticiler AS Y JOIN YoneticiTurleri AS YT ON Y.YoneticiTur_ID = YT.ID WHERE Y.Mail = @mail AND Y.Sifre = @sifre";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@mail", mail);
-                cmd.Parameters.AddWithValue("@sifre", sifre);
-                con.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                Yonetici y = new Yonetici();
-                while (reader.Read())
-                {
-                    y.ID = reader.GetInt32(0);
-                    y.YoneticiTur_ID = reader.GetInt32(1);
-                    y.YoneticiTur = reader.GetString(2);
-                    y.Isim = reader.GetString(3);
-                    y.Soyisim = reader.GetString(4);
-                    y.Mail = reader.GetString(5);
-                    y.Sifre = reader.GetString(6);
-                    y.KullaniciAdi = reader.GetString(7);
-                }
 
-                return y;
-            }
-            catch
+
+            cmd.CommandText = "SELECT Y.ID, Y.YoneticiTur_ID, YT.Isim, Y.Isim, Y.Soyisim, Y.Mail, Y.Sifre, Y.KullaniciAdi FROM Yonetici AS Y JOIN YoneticiTurleri AS YT ON Y.YoneticiTur_ID = YT.ID WHERE Y.Mail = @mail AND Y.Sifre = @sifre";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@mail", mail);
+            cmd.Parameters.AddWithValue("@sifre", sifre);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            Yonetici y = null;
+            while (reader.Read())
             {
-                return null;
+                y = new Yonetici();
+                y.ID = reader.GetInt32(0);
+                y.YoneticiTur_ID = reader.GetInt32(1);
+                y.YoneticiTur = reader.GetString(2);
+                y.Isim = reader.GetString(3);
+                y.Soyisim = reader.GetString(4);
+                y.Mail = reader.GetString(5);
+                y.Sifre = reader.GetString(6);
+                y.KullaniciAdi = reader.GetString(7);
             }
-            finally
-            {
-                con.Close();
-            }
+            con.Close();
+            return y;
+
         }
 
         public bool UyeEkle(Yonetici yon)
@@ -345,33 +339,33 @@ namespace DataAccessLayer
 
         #region Üye Metotları
 
-        public bool SiparisOlustur()
-        {
-            //Database güncellemesi gerekli gibi
-            try
-            {
-                cmd.CommandText = "INSERT INTO Siparisler(Isim, Satici, UreticiUlke, Fiyat, Stok, Satistami) VALUES(@isim, @satici, @ureticiUlke, @fiyat, @stok, @satistami)";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@isim", ur.Isim);
-                cmd.Parameters.AddWithValue("@satici", ur.Satici);
-                cmd.Parameters.AddWithValue("@ureticiUlke", ur.UreticiUlke);
-                cmd.Parameters.AddWithValue("@fiyat", ur.Fiyat);
-                cmd.Parameters.AddWithValue("@stok", ur.Stok);
-                cmd.Parameters.AddWithValue("@satistami", ur.Satistami);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-            finally
-            {
-                con.Close();
-            }
+        //public bool SiparisOlustur()
+        //{
+        //    //Database güncellemesi gerekli gibi
+        //    try
+        //    {
+        //        //cmd.CommandText = "INSERT INTO Siparisler(Isim, Satici, UreticiUlke, Fiyat, Stok, Satistami) VALUES(@isim, @satici, @ureticiUlke, @fiyat, @stok, @satistami)";
+        //        cmd.Parameters.Clear();
+        //        cmd.Parameters.AddWithValue("@isim", ur.Isim);
+        //        cmd.Parameters.AddWithValue("@satici", ur.Satici);
+        //        cmd.Parameters.AddWithValue("@ureticiUlke", ur.UreticiUlke);
+        //        cmd.Parameters.AddWithValue("@fiyat", ur.Fiyat);
+        //        cmd.Parameters.AddWithValue("@stok", ur.Stok);
+        //        cmd.Parameters.AddWithValue("@satistami", ur.Satistami);
+        //        con.Open();
+        //        cmd.ExecuteNonQuery();
+        //        return true;
+        //    }
+        //    catch
+        //    {
+        //        return false;
+        //    }
+        //    finally
+        //    {
+        //        con.Close();
+        //    }
 
-        }
+        //}
 
         #endregion
     }

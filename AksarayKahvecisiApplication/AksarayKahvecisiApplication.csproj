@@ -67,12 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminLoginPanel\AdminLoginCSS.css" />
+    <Content Include="AdminLoginPanel\Default.aspx" />
+    <Content Include="AdminLoginPanel\YoneticiCSS.css" />
+    <Content Include="AdminLoginPanel\YoneticiGiris.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminLoginPanel\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPanel\YoneticiGiris.aspx.cs">
+      <DependentUpon>YoneticiGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\YoneticiGiris.aspx.designer.cs">
+      <DependentUpon>YoneticiGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPanel\YoneticiMaster.Master.cs">
+      <DependentUpon>YoneticiMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\YoneticiMaster.Master.designer.cs">
+      <DependentUpon>YoneticiMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminLoginPanel\YoneticiMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

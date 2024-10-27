@@ -57,3 +57,5 @@ C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplica
 C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplication\obj\Debug\AksarayK.E40BD819.Up2Date
 C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplication\obj\Debug\AksarayKahvecisiApplication.dll
 C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplication\obj\Debug\AksarayKahvecisiApplication.pdb
+C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplication\bin\DataAccessLayer.dll
+C:\Users\Mevlut\source\repos\AksarayKahvecisiApplication\AksarayKahvecisiApplication\bin\DataAccessLayer.pdb

@@ -1,0 +1,57 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #73482F;
+    font-family: Calibri;
+}
+
+.karsilama {
+    width: 430px;
+    min-height: 310px;
+    margin: 200px auto;
+    background-color: #BF784E;
+    border-radius: 15px;
+    padding: 0px 20px 0 10px;
+}
+
+.satir {
+    padding: 10px;
+}
+
+    .satir h1 {
+        text-align: center;
+    }
+
+.metinKutu {
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #F2B999;
+    color: black;
+    padding-left: 10px;
+}
+
+
+.buton {
+    background-color: #F2B999;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.hatakutu {
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid red;
+    font-weight: 700;
+    background-color: red;
+    text-align: center;
+}
+
+
