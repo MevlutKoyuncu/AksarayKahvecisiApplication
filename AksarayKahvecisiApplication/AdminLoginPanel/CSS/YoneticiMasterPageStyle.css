@@ -1,0 +1,92 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+/*renkler Color Theme Swatches in Hex 
+renkler Color Theme Swatches in Hex 
+.Land-of-Muhu-1-hex { color: #6387A6; }
+.Land-of-Muhu-2-hex { color: #BF784E; }
+.Land-of-Muhu-3-hex { color: #73482F; }
+.Land-of-Muhu-4-hex { color: #F2B999; }
+.Land-of-Muhu-5-hex { color: #D99D8F; }*/
+
+body {
+    background-color: #F2B999;
+    font-family: Calibri;
+}
+
+.ustmenu {
+    background-color: #BF784E
+}
+
+    .ustmenu .kullanicialani {
+        padding: 30px;
+        float: right;
+        width: 500px;
+    }
+
+    .ustmenu .logoalani {
+        float: left;
+        padding: 25px;
+        width: 300px;
+    }
+
+    .ustmenu .kullanicialani #lbtn_cikis {
+        float: right;
+        background-color: #73482F;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .ustmenu .kullanicialani #lbl_kullanici {
+        float: right;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+
+.kullanicialani {
+    float: right;
+}
+
+    .kullanicialani a {
+        float: right;
+        text-decoration: none;
+    }
+
+.solmenu {
+    background-color: #BF784E;
+    box-shadow: 15px 0px 7px -8px rgba(0,0,0,0.1);
+    width: 250px;
+    min-height: 600px;
+    float: left;
+}
+
+    .solmenu a {
+        text-decoration: none;
+        display: block;
+        padding: 15px 20px;
+        margin-bottom: 3px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        background-color: #73482F;
+    }
+
+        .solmenu a:hover {
+            background-color: #D99D8F;
+            color: #73482F;
+        }
+
+.icerik {
+    width: 80%;
+    padding: 30px 320px;
+}
+
+.link {
+    color: white;
+}
+
+    .link:hover {
+        color: #D99D8F;
+    }

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Yönetici Giriş Paneli</title>
-    <link href="AdminLoginCSS.css" rel="stylesheet" />
+    <link href="CSS/LoginStyle.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,11 +21,11 @@
         </asp:Panel>
         <div class="satir">
             <label>Maille Giriş</label>
-            <asp:TextBox ID="tb_mail" runat="server" placeholder="Mailinizi giriniz" CssClass="metinKutu" Text="akcs@akcs.com"></asp:TextBox>
+            <asp:TextBox ID="tb_mail" runat="server" placeholder="Mailinizi giriniz" CssClass="metinkutu" Text="akcs@akcs.com"></asp:TextBox>
         </div>
         <div class="satir">
             <label>Şifre</label>
-            <asp:TextBox ID="tb_sifre" runat="server" placeholder="Şifrenizi giriniz" TextMode="Password" CssClass="metinKutu"></asp:TextBox>
+            <asp:TextBox ID="tb_sifre" runat="server" placeholder="Şifrenizi giriniz" TextMode="Password" CssClass="metinkutu"></asp:TextBox>
         </div>
         <div class="satir">
             <asp:LinkButton ID="lbtn_giris" runat="server" OnClick="lbtn_giris_Click" CssClass="buton">Giriş</asp:LinkButton>

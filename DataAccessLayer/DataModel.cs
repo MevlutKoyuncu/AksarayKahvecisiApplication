@@ -265,7 +265,7 @@ namespace DataAccessLayer
                     al.ID = okuyucu.GetInt32(1);
                     al.Isim = okuyucu.GetString(2);
                     al.GorusulenKisi = okuyucu.GetString(3);
-                    al.Telefon = okuyucu.GetInt32(4);
+                    al.Telefon = okuyucu.GetString(4);
                     al.Sehir = okuyucu.GetString(5);
                     al.Adres = okuyucu.GetString(6);
 

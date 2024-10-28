@@ -67,9 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminLoginPanel\AdminLoginCSS.css" />
+    <Content Include="AdminLoginPanel\CSS\FormStyle.css" />
+    <Content Include="AdminLoginPanel\CSS\LoginStyle.css" />
+    <Content Include="AdminLoginPanel\CSS\YoneticiMasterPageStyle.css" />
     <Content Include="AdminLoginPanel\Default.aspx" />
-    <Content Include="AdminLoginPanel\YoneticiCSS.css" />
+    <Content Include="AdminLoginPanel\SayfaResimleri\copy-writing.png" />
+    <Content Include="AdminLoginPanel\SayfaResimleri\delete.png" />
+    <Content Include="AdminLoginPanel\SayfaResimleri\swap.png" />
+    <Content Include="AdminLoginPanel\UrunListesi.aspx" />
     <Content Include="AdminLoginPanel\YoneticiGiris.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +85,13 @@
     </Compile>
     <Compile Include="AdminLoginPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPanel\UrunListesi.aspx.cs">
+      <DependentUpon>UrunListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\UrunListesi.aspx.designer.cs">
+      <DependentUpon>UrunListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginPanel\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>

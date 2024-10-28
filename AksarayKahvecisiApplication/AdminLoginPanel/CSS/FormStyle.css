@@ -1,0 +1,57 @@
+﻿.panelbaslik {
+    padding: 5px;
+}
+
+body {
+}
+
+.panelici {
+}
+
+.tablo {
+    width: 93%;
+    border: 3px solid #BF784E;
+    border-bottom: none;
+}
+
+    .tablo tr th {
+        padding: 7px;
+        border-bottom: 3px solid #BF784E;
+        border-left: 1px solid #BF784E;
+        text-align: left;
+    }
+
+    .tablo tr td {
+        padding: 7px;
+        border-bottom: 1px solid #BF784E;
+        border-left: 1px solid #BF784E;
+    }
+
+    .tablo .alternate td {
+        padding: 7px;
+        border-bottom: 1px solid #BF784E;
+        border-left: 1px solid #BF784E;
+        background-color: #393C44;
+    }
+
+.tablobuton {
+    font-size: 10pt;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.satistami {
+    background-image: url('../sayfaresimleri/swap.png');
+    background-repeat: no-repeat;
+}
+
+.sil {
+    background-image: url('../sayfaresimleri/delete.png');
+    background-repeat: no-repeat;
+}
+
+.duzenle {
+    background-image: url('../sayfaresimleri/copy-writing.png');
+    background-repeat: no-repeat;
+}
