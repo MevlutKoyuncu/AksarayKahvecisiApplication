@@ -74,6 +74,7 @@
     <Content Include="AdminLoginPanel\SayfaResimleri\copy-writing.png" />
     <Content Include="AdminLoginPanel\SayfaResimleri\delete.png" />
     <Content Include="AdminLoginPanel\SayfaResimleri\swap.png" />
+    <Content Include="AdminLoginPanel\UrunDuzenle.aspx" />
     <Content Include="AdminLoginPanel\UrunListesi.aspx" />
     <Content Include="AdminLoginPanel\YoneticiGiris.aspx" />
     <Content Include="Web.config" />
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="AdminLoginPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPanel\UrunDuzenle.aspx.cs">
+      <DependentUpon>UrunDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\UrunDuzenle.aspx.designer.cs">
+      <DependentUpon>UrunDuzenle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginPanel\UrunListesi.aspx.cs">
       <DependentUpon>UrunListesi.aspx</DependentUpon>

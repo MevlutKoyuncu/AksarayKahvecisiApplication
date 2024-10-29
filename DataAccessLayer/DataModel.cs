@@ -115,7 +115,7 @@ namespace DataAccessLayer
 
         public List<Urunler> UrunleriGetir()
         {
-            List<Urunler> urunler = new List<Urunler>();
+            List<Urunler> urun = new List<Urunler>();
             try
             {
                 cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler";
@@ -134,9 +134,45 @@ namespace DataAccessLayer
                     ur.UreticiUlke = okuyucu.GetString(4);
                     ur.Fiyat = okuyucu.GetDecimal(5);
                     ur.Stok = okuyucu.GetInt32(6);
-                    urunler.Add(ur);
+                    urun.Add(ur);
                 }
-                return urunler;
+                return urun;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Urunler> UrunleriGetir(bool durum)
+        {
+            string d = durum ? "1" : "0";
+            List<Urunler> urun = new List<Urunler>();
+            try
+            {
+                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler WHERE Satistami = " + d;
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                Urunler ur;
+                while (okuyucu.Read())
+                {
+                    ur = new Urunler();
+                    ur.Satistami = okuyucu.GetBoolean(0);
+                    ur.SatistamiStr = okuyucu.GetBoolean(0) ? "Evet" : "Hayır";
+                    ur.ID = okuyucu.GetInt32(1);
+                    ur.Isim = okuyucu.GetString(2);
+                    ur.Satici = okuyucu.GetString(3);
+                    ur.UreticiUlke = okuyucu.GetString(4);
+                    ur.Fiyat = okuyucu.GetDecimal(5);
+                    ur.Stok = okuyucu.GetInt32(6);
+                    urun.Add(ur);
+                }
+                return urun;
             }
             catch
             {
@@ -156,11 +192,11 @@ namespace DataAccessLayer
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
-                bool durum = Convert.ToBoolean(cmd.ExecuteScalar());
+                bool satistami = Convert.ToBoolean(cmd.ExecuteScalar());
                 cmd.CommandText = "UPDATE Urunler SET Satistami = @d WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@d", !durum);
+                cmd.Parameters.AddWithValue("@d", !satistami);
                 cmd.ExecuteNonQuery();
             }
             finally
@@ -222,11 +258,15 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "UPDATE Urunler SET Isim=@isim, Satistami=@satistami WHERE ID=@id";
+                cmd.CommandText = "UPDATE Urunler SET Isim=@isim, Satici=@satici, UreticiUlke=@ureticiUlke, Fiyat=@fiyat, Stok=@stok, Satistami=@satistami WHERE ID=@id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", un.ID);
                 cmd.Parameters.AddWithValue("@isim", un.Isim);
-                cmd.Parameters.AddWithValue("@durum", un.Satistami);
+                cmd.Parameters.AddWithValue("@satici", un.Satici);
+                cmd.Parameters.AddWithValue("@ureticiUlke", un.UreticiUlke);
+                cmd.Parameters.AddWithValue("@fiyat", un.Fiyat);
+                cmd.Parameters.AddWithValue("@stok", un.Stok);
+                cmd.Parameters.AddWithValue("@satistami", un.Satistami);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;

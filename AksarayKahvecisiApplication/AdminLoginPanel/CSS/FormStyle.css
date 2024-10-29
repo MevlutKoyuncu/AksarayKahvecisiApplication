@@ -8,6 +8,11 @@ body {
 .panelici {
 }
 
+.satir {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
 .tablo {
     width: 93%;
     border: 3px solid #BF784E;
@@ -41,6 +46,34 @@ body {
     border-radius: 3px;
 }
 
+.metinkutu {
+    margin-top: 6px;
+    display: block;
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #F2B999;
+    color: black;
+    padding-left: 10px;
+}
+
+    .metinkutu:focus {
+        border-color: #73482F;
+        outline: none;
+    }
+
+.formbuton {
+    background-color: #73482F;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+    .formbuton:hover {
+        color: white;
+    }
+
 .satistami {
     background-image: url('../sayfaresimleri/swap.png');
     background-repeat: no-repeat;
@@ -54,4 +87,20 @@ body {
 .duzenle {
     background-image: url('../sayfaresimleri/copy-writing.png');
     background-repeat: no-repeat;
+}
+
+.panel {
+    padding: 7px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.basarili {
+    color: #0d5308;
+    background-color: #01d71d;
+}
+
+.basarisiz {
+    background-color: red;
 }

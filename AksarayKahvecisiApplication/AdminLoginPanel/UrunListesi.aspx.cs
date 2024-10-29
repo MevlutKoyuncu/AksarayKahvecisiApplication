@@ -22,7 +22,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
         protected void lv_urunler_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
             int id = Convert.ToInt32(e.CommandArgument);
-            if(e.CommandName=="satistami")
+            if (e.CommandName == "satistami")
             {
                 dm.UrunDurumDegistir(id);
             }
