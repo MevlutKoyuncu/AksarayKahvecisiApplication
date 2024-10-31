@@ -12,9 +12,7 @@
         <div>
     <div class="karsilama">
         <div class="satir">
-            <label>
-                <h1>Yönetici Paneli</h1>
-            </label>
+          <h1>Yönetici Paneli</h1>
         </div>
         <asp:Panel ID="pnl_hata" runat="server" CssClass="hatakutu" Visible="false">
             <asp:Label ID="lbl_hatametin" runat="server"></asp:Label>

@@ -11,7 +11,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
 {
 
 
-    public partial class UrunDuzenle
+    public partial class UrunEkle
     {
 
         /// <summary>
@@ -96,12 +96,12 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
         protected global::System.Web.UI.WebControls.CheckBox cb_durum;
 
         /// <summary>
-        /// lbtn_duzenle control.
+        /// lbtn_ekle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtn_duzenle;
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_ekle;
     }
 }

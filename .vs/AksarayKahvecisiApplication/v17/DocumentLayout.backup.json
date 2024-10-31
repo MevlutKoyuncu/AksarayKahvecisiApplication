@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunekle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunekle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\css\\formstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\css\\formstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\css\\yoneticimasterpagestyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -39,36 +55,28 @@
       "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunlistesi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|c:\\users\\mevlut\\source\\repos\\aksaraykahvecisiapplication\\aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\urunduzenle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\yonetici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\yonetici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\alicilar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\alicilar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\yonetici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\yonetici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{881C76C2-8B50-4534-ADC5-E9D0B389E1BC}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticimaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C7CB18A-3524-4681-B505-2CF8B3077AA7}|AksarayKahvecisiApplication\\AksarayKahvecisiApplication.csproj|solutionrelative:aksaraykahvecisiapplication\\adminloginpanel\\yoneticigiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,85 +90,33 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Yonetici.cs",
               "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Yonetici.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Yonetici.cs",
               "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Yonetici.cs",
               "RelativeToolTip": "DataAccessLayer\\Yonetici.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T16:46:33.951Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormStyle.css",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwF0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-28T18:54:33.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UrunListesi.aspx",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
+              "Title": "UrunEkle.aspx",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-28T18:25:14.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UrunDuzenle.aspx",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-29T12:02:08.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UrunDuzenle.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T12:03:53.719Z",
+              "WhenOpened": "2024-10-31T16:06:02.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-27T15:11:34.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "YoneticiGiris.aspx",
               "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx",
               "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx",
@@ -168,64 +124,38 @@
               "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-27T15:25:53.693Z",
+              "WhenOpened": "2024-10-31T16:56:31.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UrunEkle.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx.cs",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx.cs",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunEkle.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:06:25.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "YoneticiGiris.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:26:35.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataModel.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\DataModel.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataModel.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\DataModel.cs",
-              "RelativeToolTip": "DataAccessLayer\\DataModel.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAqwAwBAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T17:05:43.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "YoneticiMasterPageStyle.css",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-28T19:01:26.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginStyle.css",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-28T18:55:46.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UrunListesi.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:48:46.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "YoneticiMaster.Master",
               "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master",
               "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master",
@@ -238,63 +168,168 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Urunler.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Urunler.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Urunler.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Urunler.cs",
-              "RelativeToolTip": "DataAccessLayer\\Urunler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T18:42:26.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ConnectionStrings.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\ConnectionStrings.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\ConnectionStrings.cs",
-              "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:43:41.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Alicilar.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Alicilar.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Alicilar.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Alicilar.cs",
-              "RelativeToolTip": "DataAccessLayer\\Alicilar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T12:18:48.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "YoneticiMaster.Master.cs",
               "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master.cs",
               "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master.cs",
               "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master.cs",
               "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiMaster.Master.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAWwBYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T18:36:53.831Z"
+              "WhenOpened": "2024-10-27T18:36:53.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormStyle.css",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\FormStyle.css",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-28T18:54:33.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UrunListesi.aspx",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-31T17:18:22.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UrunListesi.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunListesi.aspx.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAMwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:48:46.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UrunDuzenle.aspx",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-29T12:02:08.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\DataModel.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataModel.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\DataModel.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataModel.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAcwMEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T17:05:43.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginStyle.css",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\LoginStyle.css",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-28T18:55:46.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "YoneticiMasterPageStyle.css",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\CSS\\YoneticiMasterPageStyle.css",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-28T19:01:26.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UrunDuzenle.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\UrunDuzenle.aspx.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswDMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T09:54:26.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
+              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
+              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-27T15:11:34.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Alicilar.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Alicilar.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Alicilar.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Alicilar.cs",
+              "RelativeToolTip": "DataAccessLayer\\Alicilar.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:18:48.186Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "YoneticiGiris.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
-              "RelativeDocumentMoniker": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
-              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
-              "RelativeToolTip": "AksarayKahvecisiApplication\\AdminLoginPanel\\YoneticiGiris.aspx.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAAzAAAAAAAAAA==",
+              "Title": "Urunler.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Urunler.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Urunler.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\Urunler.cs",
+              "RelativeToolTip": "DataAccessLayer\\Urunler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T15:26:35.552Z"
+              "WhenOpened": "2024-10-28T18:42:26.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
+              "ToolTip": "C:\\Users\\Mevlut\\source\\repos\\AksarayKahvecisiApplication\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:43:41.774Z"
             }
           ]
         }

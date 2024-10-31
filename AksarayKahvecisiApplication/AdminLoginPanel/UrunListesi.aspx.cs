@@ -13,10 +13,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                Doldur();
-            }
+            Doldur();
         }
 
         protected void lv_urunler_ItemCommand(object sender, ListViewCommandEventArgs e)
@@ -30,11 +27,22 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
             {
                 dm.UrunSil(id);
             }
+            Doldur();
         }
         void Doldur()
         {
             lv_urunler.DataSource = dm.UrunleriGetir();
             lv_urunler.DataBind();
+        }
+        void Doldur2()
+        {
+            lv_urunler.DataSource = dm.AzalanUrunleriGetir();
+            lv_urunler.DataBind();
+        }
+
+        protected void lbtn_azalanurunler_Click(object sender, EventArgs e)
+        {
+            Doldur2();
         }
     }
 }

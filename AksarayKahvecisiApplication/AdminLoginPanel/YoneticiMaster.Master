@@ -24,7 +24,7 @@
         <div class="solmenu">
             <a href="Default.aspx">Anasayfa</a>
             <a href="UrunListesi.aspx">Ürünler Listesi</a>
-            <a href="#">Stok Kontrol</a>
+            <a href="StokKontrol.aspx">Stok Kontrol</a>
             <a href="#">Siparişler</a>
             <a href="#">Raporlamalar</a>
             <a href="#">Duyuru Ayarla</a>

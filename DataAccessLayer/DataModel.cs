@@ -184,6 +184,41 @@ namespace DataAccessLayer
             }
         }
 
+        public List<Urunler> AzalanUrunleriGetir()
+        {
+            List<Urunler> urun = new List<Urunler>();
+            try
+            {
+                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler WHERE Stok <= 100 AND Satistami = 1";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                Urunler ur;
+                while (okuyucu.Read())
+                {
+                    ur = new Urunler();
+                    ur.Satistami = okuyucu.GetBoolean(0);
+                    ur.SatistamiStr = okuyucu.GetBoolean(0) ? "Evet" : "Hayır";
+                    ur.ID = okuyucu.GetInt32(1);
+                    ur.Isim = okuyucu.GetString(2);
+                    ur.Satici = okuyucu.GetString(3);
+                    ur.UreticiUlke = okuyucu.GetString(4);
+                    ur.Fiyat = okuyucu.GetDecimal(5);
+                    ur.Stok = okuyucu.GetInt32(6);
+                    urun.Add(ur);
+                }
+                return urun;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         public void UrunDurumDegistir(int id)
         {
             try

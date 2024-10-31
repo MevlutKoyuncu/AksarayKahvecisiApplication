@@ -49,7 +49,7 @@ body {
 .metinkutu {
     margin-top: 6px;
     display: block;
-    width: 70%;
+    width: 50%;
     height: 30px;
     border-radius: 7px;
     background-color: #F2B999;
@@ -103,4 +103,15 @@ body {
 
 .basarisiz {
     background-color: red;
+}
+
+.saglink {
+    margin-top: -40px;
+    margin-right:80px;
+    float: right;
+}
+.saglink2 {
+    margin-top: -40px;
+    margin-right: 190px;
+    float: right;
 }
