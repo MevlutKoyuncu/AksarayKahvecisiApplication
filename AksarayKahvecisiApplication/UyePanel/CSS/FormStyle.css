@@ -1,0 +1,118 @@
+﻿.panelbaslik {
+    padding: 5px;
+}
+
+body {
+}
+
+.panelici {
+}
+
+.satir {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tablo {
+    width: 93%;
+    border: 3px solid #BF784E;
+    border-bottom: none;
+}
+
+    .tablo tr th {
+        padding: 7px;
+        border-bottom: 3px solid #BF784E;
+        border-left: 1px solid #BF784E;
+        text-align: left;
+    }
+
+    .tablo tr td {
+        padding: 7px;
+        border-bottom: 1px solid #BF784E;
+        border-left: 1px solid #BF784E;
+    }
+
+    .tablo .alternate td {
+        padding: 7px;
+        border-bottom: 1px solid #BF784E;
+        border-left: 1px solid #BF784E;
+        background-color: #393C44;
+    }
+
+.tablobuton {
+    font-size: 10pt;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.metinkutu {
+    margin-top: 6px;
+    display: block;
+    width: 50%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #F2B999;
+    color: black;
+    padding-left: 10px;
+}
+
+    .metinkutu:focus {
+        border-color: #73482F;
+        outline: none;
+    }
+
+.formbuton {
+    background-color: #73482F;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+    .formbuton:hover {
+        color: white;
+    }
+
+.satistami {
+    background-image: url('../sayfaresimleri/swap.png');
+    background-repeat: no-repeat;
+}
+
+.sil {
+    background-image: url('../sayfaresimleri/delete.png');
+    background-repeat: no-repeat;
+}
+
+.duzenle {
+    background-image: url('../sayfaresimleri/copy-writing.png');
+    background-repeat: no-repeat;
+}
+
+.panel {
+    padding: 7px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.basarili {
+    color: #0d5308;
+    background-color: #01d71d;
+}
+
+.basarisiz {
+    background-color: red;
+}
+
+.saglink {
+    margin-top: -40px;
+    margin-right: 80px;
+    float: right;
+}
+
+.saglink2 {
+    margin-top: -40px;
+    margin-right: 190px;
+    float: right;
+}

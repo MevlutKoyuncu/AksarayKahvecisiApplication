@@ -1,0 +1,72 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #73482F;
+    font-family: Calibri;
+}
+
+.karsilama {
+    width: 430px;
+    min-height: 310px;
+    margin: 200px auto;
+    background-color: #BF784E;
+    border-radius: 15px;
+    padding: 0px 20px 0 10px;
+}
+
+.satir {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+    .satir h1 {
+        text-align: center;
+    }
+
+    .satir #tb_sifre {
+        margin-bottom: 10px;
+    }
+
+
+.metinkutu {
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #F2B999;
+    color: black;
+    padding-left: 10px;
+}
+
+    .metinkutu:focus {
+        border-color: #73482F;
+        outline: none;
+    }
+
+.buton {
+    background-color: #F2B999;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #73482F;
+    border-radius: 10px;
+}
+
+    .buton:hover {
+        color: white;
+        background-color: #deac90;
+    }
+
+
+
+.hatakutu {
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid red;
+    font-weight: 700;
+    background-color: red;
+    text-align: center;
+}

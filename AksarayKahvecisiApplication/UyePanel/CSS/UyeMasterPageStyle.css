@@ -17,7 +17,6 @@ body {
 
 .ustmenu {
     background-color: #BF784E;
-    
 }
 
     .ustmenu .kullanicialani {
@@ -32,7 +31,7 @@ body {
         width: 300px;
     }
 
-    .ustmenu .kullanicialani #lbtn_cikis {
+    .ustmenu .kullanicialani #lbtn_uyecikis {
         float: right;
         background-color: #73482F;
         padding: 10px;
@@ -61,7 +60,7 @@ body {
     width: 250px;
     min-height: 600px;
     float: left;
-    margin-right:50px;
+    margin-right: 50px;
 }
 
     .solmenu a {
@@ -82,8 +81,8 @@ body {
 
 .icerik {
     width: 80%;
-    margin-top:25px;
-    float:left;
+    margin-top: 25px;
+    float: left;
 }
 
 .link {

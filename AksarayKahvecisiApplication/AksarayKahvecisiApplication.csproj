@@ -71,6 +71,7 @@
     <Content Include="AdminLoginPanel\CSS\LoginStyle.css" />
     <Content Include="AdminLoginPanel\CSS\YoneticiMasterPageStyle.css" />
     <Content Include="AdminLoginPanel\Default.aspx" />
+    <Content Include="AdminLoginPanel\Duyurular.aspx" />
     <Content Include="AdminLoginPanel\SayfaResimleri\add.png" />
     <Content Include="AdminLoginPanel\SayfaResimleri\copy-writing.png" />
     <Content Include="AdminLoginPanel\SayfaResimleri\delete.png" />
@@ -79,6 +80,12 @@
     <Content Include="AdminLoginPanel\UrunEkle.aspx" />
     <Content Include="AdminLoginPanel\UrunListesi.aspx" />
     <Content Include="AdminLoginPanel\YoneticiGiris.aspx" />
+    <Content Include="AdminLoginPanel\Üyelikler.aspx" />
+    <Content Include="UyePanel\CSS\FormStyle.css" />
+    <Content Include="UyePanel\CSS\LoginStyle.css" />
+    <Content Include="UyePanel\CSS\UyeMasterPageStyle.css" />
+    <Content Include="UyePanel\Default.aspx" />
+    <Content Include="UyePanel\UyeGiris.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +95,13 @@
     </Compile>
     <Compile Include="AdminLoginPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPanel\Duyurular.aspx.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\Duyurular.aspx.designer.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginPanel\UrunDuzenle.aspx.cs">
       <DependentUpon>UrunDuzenle.aspx</DependentUpon>
@@ -124,11 +138,40 @@
     <Compile Include="AdminLoginPanel\YoneticiMaster.Master.designer.cs">
       <DependentUpon>YoneticiMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminLoginPanel\Üyelikler.aspx.cs">
+      <DependentUpon>Üyelikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPanel\Üyelikler.aspx.designer.cs">
+      <DependentUpon>Üyelikler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyePanel\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyePanel\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyePanel\UyeGiris.aspx.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyePanel\UyeGiris.aspx.designer.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyePanel\UyeMaster.Master.cs">
+      <DependentUpon>UyeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyePanel\UyeMaster.Master.designer.cs">
+      <DependentUpon>UyeMaster.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLoginPanel\YoneticiMaster.Master" />
     <None Include="packages.config" />
+    <Content Include="UyePanel\UyeMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

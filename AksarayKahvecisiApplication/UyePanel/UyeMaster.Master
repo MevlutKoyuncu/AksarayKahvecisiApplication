@@ -1,11 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YoneticiMaster.master.cs" Inherits="AksarayKahvecisiApplication.AdminLoginPanel.YoneticiMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UyeMaster.master.cs" Inherits="AksarayKahvecisiApplication.UyePanel.UyeMaster" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>Aksaray Kahvecisi Yönetici Paneli</title>
-    <link href="CSS/YoneticiMasterPageStyle.css" rel="stylesheet" />
+    <title>Aksaray Kahvecisi Üye Paneli</title>
+    <link href="CSS/UyeMasterPageStyle.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -13,22 +13,19 @@
     <form id="form1" runat="server">
         <div class="ustmenu">
             <div class="logoalani">
-                <h2>Yönetici Paneli</h2>
+                <h2>Aksaray Kahvecisi Üye Paneli</h2>
             </div>
             <div class="kullanicialani">
-                <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click" Text="Güvenli Çıkış" CssClass="link"></asp:LinkButton>
+                <asp:LinkButton ID="lbtn_uyecikis" runat="server" OnClick="lbtn_uyecikis_Click" Text="Güvenli Çıkış" CssClass="link"></asp:LinkButton>
                 <asp:Label ID="lbl_kullanici" runat="server" Text="kullanıcı"></asp:Label>
             </div>
             <div style="clear:both"></div>
         </div>
         <div class="solmenu">
             <a href="Default.aspx">Anasayfa</a>
-            <a href="UrunListesi.aspx">Ürünler Listesi</a>
-            <a href="#">Stok Kontrol</a>
-            <a href="#">Siparişler</a>
-            <a href="#">Raporlamalar</a>
-            <a href="#">Duyuru Ayarla</a>
-            <a href="#">Üyelikler</a>
+            <a href="#">Sipariş Oluştur</a>
+            <a href="#">Siparişlerim</a>
+            <a href="#">İletişime Geç</a>
         </div>
         <div class="icerik">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

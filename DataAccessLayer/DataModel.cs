@@ -82,6 +82,60 @@ namespace DataAccessLayer
             }
         }
 
+        public List<Duyurular> DuyurularıGetir()
+        {
+
+            List<Duyurular> duyurular = new List<Duyurular>();
+            try
+            {
+                cmd.CommandText = "SELECT ID, Baslik, Iceriki, Tarih FROM Duyurular";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                Duyurular duy;
+                while (okuyucu.Read())
+                {
+                    duy = new Duyurular();
+                    duy.ID = okuyucu.GetInt32(0);
+                    duy.Baslik = okuyucu.GetString(1);
+                    duy.Icerik = okuyucu.GetString(2);
+                    duy.Tarih = okuyucu.GetDateTime(3);
+
+                    duyurular.Add(duy);
+                }
+                return duyurular;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DuyuruEkle(Duyurular duy)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Duyurular(Baslik, Icerik, Tarih) VALUES(@baslik, @icerik, @tarih)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@baslik", duy.Baslik);
+                cmd.Parameters.AddWithValue("@icerik", duy.Icerik);
+                cmd.Parameters.AddWithValue("@ureticiUlke", duy.Tarih);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
         #endregion
 
@@ -413,6 +467,33 @@ namespace DataAccessLayer
         #endregion
 
         #region Üye Metotları
+
+        public Alicilar UyeGiris(string isim, string sifre)
+        {
+            cmd.CommandText = "SELECT U.ID, U.UyelikTur_ID, UT.Isim, U.Isim, U.GorusulenKisi, U.Telefon, U.Sehir, U.Adres, U.AktifMi, U.Mail, U.Sifre FROM Alicilar AS U JOIN UyelikTurleri AS UT ON U.UyelikTur_ID = UT.ID WHERE U.Isim = @isim AND U.Sifre = @sifre";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@isim", isim);
+            cmd.Parameters.AddWithValue("@sifre", sifre);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            Alicilar u = null;
+            while (reader.Read())
+            {
+                u = new Alicilar();
+                u.ID = reader.GetInt32(0);
+                u.UyelikTur_ID = reader.GetInt32(1);
+                u.UyelikTur = reader.GetString(2);
+                u.Isim = reader.GetString(3);
+                u.GorusulenKisi = reader.GetString(4);
+                u.Telefon = reader.GetString(5);
+                u.Sehir = reader.GetString(6);
+                u.Adres = reader.GetString(7);
+            }
+            con.Close();
+            return u;
+        }
+
+
 
         //public bool SiparisOlustur()
         //{
