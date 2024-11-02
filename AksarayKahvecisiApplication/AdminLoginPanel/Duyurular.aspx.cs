@@ -14,45 +14,23 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Doldur();
         }
 
-        protected void lbtn_duyuruekle_Click(object sender, EventArgs e)
+        void Doldur()
         {
-            if (!string.IsNullOrEmpty(tb_baslik.Text))
+            lv_duyuru.DataSource = dm.DuyurulariGetir(true);
+            lv_duyuru.DataBind();
+        }
+
+        protected void lv_duyuru_ItemCommand(object sender, ListViewCommandEventArgs e)
+        {
+            int id = Convert.ToInt32(e.CommandArgument);
+            if (e.CommandName == "sil")
             {
-                if (tb_baslik.Text.Length < 50)
-                {
-                    Duyurular duy = new Duyurular();
-                    duy.Baslik = tb_baslik.Text;
-                    duy.Icerik = tb_icerik.Text;
-                    duy.Tarih = DateTime.Now;
-                    if (dm.DuyuruEkle(duy))
-                    {
-                        Response.Redirect("Duyurular.aspx");
-                        pnl_basarisiz.Visible = false;
-                        pnl_basarili.Visible = true;
-                    }
-                    else
-                    {
-                        lbl_mesaj.Text = "Duyuru eklenirken bir hata oluştu";
-                        pnl_basarisiz.Visible = true;
-                        pnl_basarili.Visible = false;
-                    }
-                }
-                else
-                {
-                    lbl_mesaj.Text = "Duyuru başlığı 50 karakterden büyük olamaz";
-                    pnl_basarisiz.Visible = true;
-                    pnl_basarili.Visible = false;
-                }
+                dm.DuyuruSil(id);
             }
-            else
-            {
-                lbl_mesaj.Text = "Duyuru başlığı boş bırakılamaz";
-                pnl_basarisiz.Visible = true;
-                pnl_basarili.Visible = false;
-            }
+            Doldur();
         }
     }
 }

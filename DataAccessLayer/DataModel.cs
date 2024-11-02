@@ -56,20 +56,20 @@ namespace DataAccessLayer
 
         }
 
-        public bool UyeEkle(Yonetici yon)
+        public bool UyeEkle(Alicilar al)
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Yonetici(Isim, Soyisim, Mail, KullaniciAdi, Sifre, YoneticiTur) VALUES(@isim, @soyisim, @mail, @kullaniciAdi, @sifre, @yoneticiTur)";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@isim", yon.Isim);
-                cmd.Parameters.AddWithValue("@soyisim", yon.Soyisim);
-                cmd.Parameters.AddWithValue("@mail", yon.Mail);
-                cmd.Parameters.AddWithValue("@kullaniciAdi", yon.KullaniciAdi);
-                cmd.Parameters.AddWithValue("@sifre", yon.Sifre);
-                cmd.Parameters.AddWithValue("@yoneticiTur", yon.YoneticiTur);
-                con.Open();
-                cmd.ExecuteNonQuery();
+                //cmd.CommandText = "INSERT INTO Yonetici(Isim, Soyisim, Mail, KullaniciAdi, Sifre, YoneticiTur) VALUES(@isim, @soyisim, @mail, @kullaniciAdi, @sifre, @yoneticiTur)";
+                //cmd.Parameters.Clear();
+                //cmd.Parameters.AddWithValue("@isim", yon.Isim);
+                //cmd.Parameters.AddWithValue("@soyisim", yon.Soyisim);
+                //cmd.Parameters.AddWithValue("@mail", yon.Mail);
+                //cmd.Parameters.AddWithValue("@kullaniciAdi", yon.KullaniciAdi);
+                //cmd.Parameters.AddWithValue("@sifre", yon.Sifre);
+                //cmd.Parameters.AddWithValue("@yoneticiTur", yon.YoneticiTur);
+                //con.Open();
+                //cmd.ExecuteNonQuery();
                 return true;
             }
             catch
@@ -82,28 +82,28 @@ namespace DataAccessLayer
             }
         }
 
-        public List<Duyurular> DuyurularıGetir()
+        public List<News> DuyurulariGetir()
         {
 
-            List<Duyurular> duyurular = new List<Duyurular>();
+            List<News> news = new List<News>();
             try
             {
-                cmd.CommandText = "SELECT ID, Baslik, Iceriki, Tarih FROM Duyurular";
+                cmd.CommandText = "SELECT ID, Baslik, Icerik, Tarih FROM Duyurular";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader okuyucu = cmd.ExecuteReader();
-                Duyurular duy;
+                News n;
                 while (okuyucu.Read())
                 {
-                    duy = new Duyurular();
-                    duy.ID = okuyucu.GetInt32(0);
-                    duy.Baslik = okuyucu.GetString(1);
-                    duy.Icerik = okuyucu.GetString(2);
-                    duy.Tarih = okuyucu.GetDateTime(3);
+                    n = new News();
+                    n.ID = okuyucu.GetInt32(0);
+                    n.Baslik = okuyucu.GetString(1);
+                    n.Icerik = okuyucu.GetString(2);
+                    n.Tarih = okuyucu.GetDateTime(3);
 
-                    duyurular.Add(duy);
+                    news.Add(n);
                 }
-                return duyurular;
+                return news;
             }
             catch
             {
@@ -115,21 +115,72 @@ namespace DataAccessLayer
             }
         }
 
-        public bool DuyuruEkle(Duyurular duy)
+        public List<News> DuyurulariGetir(bool d)
+        {
+
+            List<News> news = new List<News>();
+            try
+            {
+                cmd.CommandText = "SELECT TOP(5) * FROM Duyurular ORDER BY ID DESC";
+                //cmd.CommandText = "SELECT ID, Baslik, Icerik, Tarih FROM Duyurular";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                News n;
+                while (okuyucu.Read())
+                {
+                    n = new News();
+                    n.ID = okuyucu.GetInt32(0);
+                    n.Baslik = okuyucu.GetString(1);
+                    n.Icerik = okuyucu.GetString(2);
+                    n.Tarih = okuyucu.GetDateTime(3);
+
+                    news.Add(n);
+                }
+                return news;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool DuyuruEkle(News n)
         {
             try
             {
                 cmd.CommandText = "INSERT INTO Duyurular(Baslik, Icerik, Tarih) VALUES(@baslik, @icerik, @tarih)";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@baslik", duy.Baslik);
-                cmd.Parameters.AddWithValue("@icerik", duy.Icerik);
-                cmd.Parameters.AddWithValue("@ureticiUlke", duy.Tarih);
+                cmd.Parameters.AddWithValue("@baslik", n.Baslik);
+                cmd.Parameters.AddWithValue("@icerik", n.Icerik);
+                cmd.Parameters.AddWithValue("@tarih", n.Tarih);
+                con.Open();
                 cmd.ExecuteNonQuery();
                 return true;
             }
             catch
             {
                 return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void DuyuruSil(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE FROM Duyurular WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
             }
             finally
             {

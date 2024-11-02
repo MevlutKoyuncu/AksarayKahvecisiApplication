@@ -27,7 +27,7 @@
             <a href="#">Stok Kontrol</a>
             <a href="#">Siparişler</a>
             <a href="#">Raporlamalar</a>
-            <a href="#">Duyuru Ayarla</a>
+            <a href="Duyurular.aspx">Duyuru Ayarla</a>
             <a href="#">Üyelikler</a>
         </div>
         <div class="icerik">

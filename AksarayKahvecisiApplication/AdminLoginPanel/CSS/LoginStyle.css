@@ -25,10 +25,11 @@ body {
     .satir h1 {
         text-align: center;
     }
-    .satir #tb_sifre{
-        margin-bottom:10px;
+
+    .satir #tb_sifre {
+        margin-bottom: 10px;
     }
-    
+
 
 .metinkutu {
     margin-top: 6px;
@@ -52,20 +53,19 @@ body {
     text-decoration: none;
     color: #73482F;
     border-radius: 10px;
- 
 }
+
     .buton:hover {
         color: white;
         background-color: #deac90;
     }
-    
-    
 
-    .hatakutu {
-        padding: 7px;
-        border-radius: 7px;
-        border: 1px solid red;
-        font-weight: 700;
-        background-color: red;
-        text-align: center;
-    }
+
+.hatakutu {
+    padding: 7px;
+    border-radius: 7px;
+    border: 1px solid red;
+    font-weight: 700;
+    background-color: red;
+    text-align: center;
+}

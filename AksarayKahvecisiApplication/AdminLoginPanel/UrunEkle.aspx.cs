@@ -21,6 +21,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
 
         protected void lbtn_ekle_Click(object sender, EventArgs e)
         {
+            Yonetici y = (Yonetici)Session["GirisYapanYonetici"];
             if (!string.IsNullOrEmpty(tb_isim.Text))
             {
                 if (tb_isim.Text.Length < 50)
@@ -29,7 +30,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
                     ur.Isim = tb_isim.Text;
                     ur.Satici = tb_satici.Text;
                     ur.UreticiUlke = tb_ureticiUlke.Text;
-                    ur.Fiyat = Math.Round(Convert.ToDecimal(tb_fiyat.Text), 2);
+                    ur.Fiyat = Convert.ToDecimal(tb_fiyat.Text);
                     ur.Stok = int.Parse(tb_stok.Text);
                     ur.Satistami = cb_durum.Checked;
                     if (dm.UrunEkle(ur))

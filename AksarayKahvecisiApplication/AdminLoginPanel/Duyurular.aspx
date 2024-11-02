@@ -6,14 +6,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="formpanel">
         <div class="panelbaslik">
-            <h2>Ürün Listelesi</h2>
-            <a href="DuyuruEkle.aspx" class="saglink formbuton">Ürün Ekle</a>
-            <asp:LinkButton ID="lbtn_azalanurunler" runat="server" OnClick="lbtn_azalanurunler_Click" CssClass="formbuton saglink2">Azalan Ürünleri Göster</asp:LinkButton>
+            <h2>Duyuru Listesi</h2>
+            <a href="DuyuruEkle.aspx" class="saglink formbuton">Duyuru Ekle</a>
         </div>
         <div class="panelici">
-            <asp:ListView ID="lv_urunler" runat="server" OnItemCommand="lv_urunler_ItemCommand">
+            <asp:ListView ID="lv_duyuru" runat="server" OnItemCommand="lv_duyuru_ItemCommand">
                 <LayoutTemplate>
-                    <asp:PlaceHolder ID="itemPlaceHolder" runat="server"></asp:PlaceHolder>
+                    <table class="tablo" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th>Duyuru Başlığı</th>
+                            <th>Duyuru İçeriği</th>
+                            <th>Tarih ve Saat</th>
+                            <th>Seçenekler</th>
+                        </tr>
+                        <asp:PlaceHolder ID="ItemPlaceHolder" runat="server"></asp:PlaceHolder>
+                        </table>
                 </LayoutTemplate>
                 <ItemTemplate>
                     <tr>
@@ -21,8 +28,7 @@
                         <td><%# Eval("Icerik") %></td>
                         <td><%# Eval("Tarih") %></td>
                         <td>
-                            <asp:LinkButton ID="lbtn_durumsil" runat="server" CssClass="tablobuton sil" CommandArgument='<%# Eval("ID") %>' CommandName="sil"></asp:LinkButton>
-                            <a href='DuyuruDuzenle.aspx?uid=<%# Eval("ID") %>' class="tablobuton duzenle"></a>
+                            <asp:LinkButton ID="lbtn_duyurusil" runat="server" CssClass="tablobuton sil" CommandArgument='<%# Eval("ID") %>' CommandName="sil"></asp:LinkButton>
                         </td>
                     </tr>
                 </ItemTemplate>

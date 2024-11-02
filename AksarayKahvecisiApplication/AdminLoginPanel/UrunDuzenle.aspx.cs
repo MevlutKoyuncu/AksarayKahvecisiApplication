@@ -36,6 +36,7 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
 
         protected void lbtn_duzenle_Click(object sender, EventArgs e)
         {
+            Yonetici y = (Yonetici)Session["GirisYapanYonetici"];
             if (!string.IsNullOrEmpty(tb_isim.Text))
             {
                 if (tb_isim.Text.Length < 50)

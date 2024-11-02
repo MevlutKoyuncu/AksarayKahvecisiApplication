@@ -42,7 +42,7 @@ body {
 .tablobuton {
     font-size: 10pt;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 3px;
 }
 
@@ -116,3 +116,15 @@ body {
     margin-right: 190px;
     float: right;
 }
+
+.tablo1 {
+    width: 100%;
+    border: 0px solid #BF784E;
+    border-bottom: none;
+    margin-left: 6px;
+}
+
+.duyurubaslik {
+    font-weight: 900;
+}
+
