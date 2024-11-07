@@ -236,7 +236,7 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetString(4);
+                    ur.UreticiUlke = okuyucu.GetInt32(4);
                     ur.Fiyat = okuyucu.GetDecimal(5);
                     ur.Stok = okuyucu.GetInt32(6);
                     urun.Add(ur);
@@ -272,7 +272,7 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetString(4);
+                    ur.UreticiUlke = okuyucu.GetInt32(4);
                     ur.Fiyat = okuyucu.GetDecimal(5);
                     ur.Stok = okuyucu.GetInt32(6);
                     urun.Add(ur);
@@ -288,6 +288,65 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+
+        public List<UreticiUlkeler> UreticiUlkeleriGetir()
+        {
+            List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
+            try
+            {
+                cmd.CommandText = "SELECT ID, Isim FROM UreticiUlkeler";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                UreticiUlkeler uu;
+                while (okuyucu.Read())
+                {
+                    uu = new UreticiUlkeler();
+                    uu.ID = okuyucu.GetInt32(0);
+                    uu.Isim = okuyucu.GetString(1);
+
+                }
+                return uret;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<UreticiUlkeler> UreticiUlkeleriGetir(bool durum)
+        {
+            List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
+            try
+            {
+                cmd.CommandText = "SELECT ID, Isim FROM UreticiUlkeler";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                UreticiUlkeler uu;
+                while (okuyucu.Read())
+                {
+                    uu = new UreticiUlkeler();
+                    uu.ID = okuyucu.GetInt32(0);
+                    uu.Isim = okuyucu.GetString(1);
+
+                }
+                return uret;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
 
         public List<Urunler> AzalanUrunleriGetir()
         {
@@ -307,7 +366,7 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetString(4);
+                    ur.UreticiUlke = okuyucu.GetInt32(4);
                     ur.Fiyat = okuyucu.GetDecimal(5);
                     ur.Stok = okuyucu.GetInt32(6);
                     urun.Add(ur);
@@ -376,7 +435,7 @@ namespace DataAccessLayer
                     u.ID = okuyucu.GetInt32(0);
                     u.Isim = okuyucu.GetString(1);
                     u.Satici = okuyucu.GetString(2);
-                    u.UreticiUlke = okuyucu.GetString(3);
+                    u.UreticiUlke = okuyucu.GetInt32(3);
                     u.Fiyat = okuyucu.GetDecimal(4);
                     u.Stok = okuyucu.GetInt32(5);
                     u.Satistami = okuyucu.GetBoolean(6);
@@ -544,35 +603,32 @@ namespace DataAccessLayer
             return u;
         }
 
-
-
-        //public bool SiparisOlustur()
-        //{
-        //    //Database güncellemesi gerekli gibi
-        //    try
-        //    {
-        //        //cmd.CommandText = "INSERT INTO Siparisler(Isim, Satici, UreticiUlke, Fiyat, Stok, Satistami) VALUES(@isim, @satici, @ureticiUlke, @fiyat, @stok, @satistami)";
-        //        cmd.Parameters.Clear();
-        //        cmd.Parameters.AddWithValue("@isim", ur.Isim);
-        //        cmd.Parameters.AddWithValue("@satici", ur.Satici);
-        //        cmd.Parameters.AddWithValue("@ureticiUlke", ur.UreticiUlke);
-        //        cmd.Parameters.AddWithValue("@fiyat", ur.Fiyat);
-        //        cmd.Parameters.AddWithValue("@stok", ur.Stok);
-        //        cmd.Parameters.AddWithValue("@satistami", ur.Satistami);
-        //        con.Open();
-        //        cmd.ExecuteNonQuery();
-        //        return true;
-        //    }
-        //    catch
-        //    {
-        //        return false;
-        //    }
-        //    finally
-        //    {
-        //        con.Close();
-        //    }
-
-        //}
+        public bool SiparisOlustur(Siparisler s)
+        {
+            //Database güncellemesi gerekli gibi
+            try
+            {
+                cmd.CommandText = "INSERT INTO Satislar(UrunID, TurID, AliciID, Miktar, Durum, Tarih) VALUES(@urunID, @turID, @aliciID, @miktar, @durum, @tarih)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@urunID", s.UrunID);
+                cmd.Parameters.AddWithValue("@TurID", s.TurID);
+                cmd.Parameters.AddWithValue("@aliciID", s.AliciID);
+                cmd.Parameters.AddWithValue("@miktar", s.TurID);
+                cmd.Parameters.AddWithValue("@durum", s.DurumID);
+                cmd.Parameters.AddWithValue("@tarih", s.Tarih);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
         #endregion
     }

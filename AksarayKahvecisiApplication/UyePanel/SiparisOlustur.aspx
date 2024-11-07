@@ -27,7 +27,7 @@
             </div>
             <div class="satir">
                 <label>İstenilen Miktar(KG)(Adet)</label><br />
-                <asp:TextBox ID="tv_miktar" runat="server" CssClass="metinkutu" placeholder="İstediğiniz miktarı giriniz"></asp:TextBox>
+                <asp:TextBox ID="tb_miktar" runat="server" CssClass="metinkutu" placeholder="İstediğiniz miktarı giriniz"></asp:TextBox>
             </div>
             <div class="satir" style="padding-top: 20px;">
                 <asp:LinkButton ID="lbtn_siparisolustur" runat="server" CssClass="formbuton" OnClick="lbtn_siparisolustur_Click">Sipariş oluştur</asp:LinkButton>

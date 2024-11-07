@@ -60,13 +60,13 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
         protected global::System.Web.UI.WebControls.TextBox tb_satici;
 
         /// <summary>
-        /// tb_ureticiUlke control.
+        /// ddl_ureticiulke control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_ureticiUlke;
+        protected global::System.Web.UI.WebControls.DropDownList ddl_ureticiulke;
 
         /// <summary>
         /// tb_fiyat control.

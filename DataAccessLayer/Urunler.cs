@@ -11,7 +11,7 @@ namespace DataAccessLayer
         public int ID { get; set; }
         public string Isim { get; set; }
         public string Satici { get; set; }
-        public string UreticiUlke { get; set; }
+        public int UreticiUlke { get; set; }
         public decimal Fiyat { get; set; }
         public int Stok { get; set; }
         public bool Satistami { get; set; }
