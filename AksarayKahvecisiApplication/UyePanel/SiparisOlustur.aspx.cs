@@ -15,7 +15,7 @@ namespace AksarayKahvecisiApplication.UyePanel
         {
             if (!IsPostBack)
             {
-                ddl_urunler.DataSource = dm.UrunleriGetir();
+                ddl_urunler.DataSource = dm.UrunleriGetir(true);
                 ddl_urunler.DataBind();
                 ddl_ureticiulke.DataSource = dm.UreticiUlkeleriGetir();
                 ddl_ureticiulke.DataBind();
@@ -32,9 +32,9 @@ namespace AksarayKahvecisiApplication.UyePanel
             u.Tarih = DateTime.Now;
             u.Miktar = Convert.ToInt32(tb_miktar.Text);
             u.DurumID = 1;
+            //if(!string.IsNullOrEmpty(tb_isim.Text))
             if (dm.SiparisOlustur(u))
             {
-                Response.Redirect("Siparislerim.aspx");
                 pnl_basarisiz.Visible = false;
                 pnl_basarili.Visible = true;
             }

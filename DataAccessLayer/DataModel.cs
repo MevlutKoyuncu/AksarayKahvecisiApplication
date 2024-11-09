@@ -223,7 +223,7 @@ namespace DataAccessLayer
             List<Urunler> urun = new List<Urunler>();
             try
             {
-                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler";
+                cmd.CommandText = "SELECT P.Satistami, P.ID, P.Isim, P.Satici, P.Fiyat, P.Stok, UU.ID, UU.Isim FROM Urunler AS P JOIN UreticiUlkeler AS UU ON P.UreticiUlke = UU.ID";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader okuyucu = cmd.ExecuteReader();
@@ -236,9 +236,10 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetInt32(4);
-                    ur.Fiyat = okuyucu.GetDecimal(5);
-                    ur.Stok = okuyucu.GetInt32(6);
+                    ur.UreticiUlkeID = okuyucu.GetInt32(6);
+                    ur.UreticiUlke = okuyucu.GetString(7);
+                    ur.Fiyat = okuyucu.GetDecimal(4);
+                    ur.Stok = okuyucu.GetInt32(5);
                     urun.Add(ur);
                 }
                 return urun;
@@ -259,7 +260,7 @@ namespace DataAccessLayer
             List<Urunler> urun = new List<Urunler>();
             try
             {
-                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler WHERE Satistami = " + d;
+                cmd.CommandText = "SELECT P.Satistami, P.ID, P.Isim, P.Satici, P.Fiyat, P.Stok, UU.ID, UU.Isim FROM Urunler AS P JOIN UreticiUlkeler AS UU ON P.UreticiUlke = UU.ID";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader okuyucu = cmd.ExecuteReader();
@@ -272,9 +273,10 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetInt32(4);
-                    ur.Fiyat = okuyucu.GetDecimal(5);
-                    ur.Stok = okuyucu.GetInt32(6);
+                    ur.UreticiUlkeID = okuyucu.GetInt32(6);
+                    ur.UreticiUlke = okuyucu.GetString(7);
+                    ur.Fiyat = okuyucu.GetDecimal(4);
+                    ur.Stok = okuyucu.GetInt32(5);
                     urun.Add(ur);
                 }
                 return urun;
@@ -291,9 +293,10 @@ namespace DataAccessLayer
 
         public List<UreticiUlkeler> UreticiUlkeleriGetir()
         {
-            List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
+            
             try
             {
+                List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
                 cmd.CommandText = "SELECT ID, Isim FROM UreticiUlkeler";
                 cmd.Parameters.Clear();
                 con.Open();
@@ -304,7 +307,7 @@ namespace DataAccessLayer
                     uu = new UreticiUlkeler();
                     uu.ID = okuyucu.GetInt32(0);
                     uu.Isim = okuyucu.GetString(1);
-
+                    uret.Add(uu);
                 }
                 return uret;
             }
@@ -320,9 +323,10 @@ namespace DataAccessLayer
 
         public List<UreticiUlkeler> UreticiUlkeleriGetir(bool durum)
         {
-            List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
+            
             try
             {
+                List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
                 cmd.CommandText = "SELECT ID, Isim FROM UreticiUlkeler";
                 cmd.Parameters.Clear();
                 con.Open();
@@ -353,7 +357,7 @@ namespace DataAccessLayer
             List<Urunler> urun = new List<Urunler>();
             try
             {
-                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler WHERE Stok <= 100 AND Satistami = 1";
+                cmd.CommandText = "SELECT Satistami, ID, Isim, Satici, UreticiUlke, Fiyat, Stok FROM Urunler WHERE Stok <= 10 AND Satistami = 1";
                 cmd.Parameters.Clear();
                 con.Open();
                 SqlDataReader okuyucu = cmd.ExecuteReader();
@@ -366,7 +370,7 @@ namespace DataAccessLayer
                     ur.ID = okuyucu.GetInt32(1);
                     ur.Isim = okuyucu.GetString(2);
                     ur.Satici = okuyucu.GetString(3);
-                    ur.UreticiUlke = okuyucu.GetInt32(4);
+                    ur.UreticiUlke = okuyucu.GetString(4);
                     ur.Fiyat = okuyucu.GetDecimal(5);
                     ur.Stok = okuyucu.GetInt32(6);
                     urun.Add(ur);
@@ -435,7 +439,7 @@ namespace DataAccessLayer
                     u.ID = okuyucu.GetInt32(0);
                     u.Isim = okuyucu.GetString(1);
                     u.Satici = okuyucu.GetString(2);
-                    u.UreticiUlke = okuyucu.GetInt32(3);
+                    u.UreticiUlke = okuyucu.GetString(3);
                     u.Fiyat = okuyucu.GetDecimal(4);
                     u.Stok = okuyucu.GetInt32(5);
                     u.Satistami = okuyucu.GetBoolean(6);

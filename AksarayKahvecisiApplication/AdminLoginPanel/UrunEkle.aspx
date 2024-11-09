@@ -25,7 +25,9 @@
             </div>
             <div class="satir">
                 <label>Üretici Ülke</label><br />
-                <asp:DropDownList ID="ddl_ureticiulke" runat="server" CssClass="metinkutu" DataTextField="Isim" DataValueField="ID" AppendDataBoundItems="true"></asp:DropDownList>
+                <asp:DropDownList ID="ddl_ureticiulke" runat="server" CssClass="metinkutu" DataTextField="Isim" DataValueField="ID" AppendDataBoundItems="true">
+                     <asp:ListItem Value="-1" Text="Üretici Ülke Seçiniz"></asp:ListItem>
+                </asp:DropDownList>
             </div>
             <div class="satir">
                 <label>Fiyat</label><br />

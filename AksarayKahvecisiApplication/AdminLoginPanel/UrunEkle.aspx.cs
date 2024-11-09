@@ -11,11 +11,11 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
     public partial class UrunEkle : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        protected void Page_Load(object sender, EventArgs e)    
+        protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                ddl_ureticiulke.DataSource = dm.UreticiUlkeleriGetir(true);
+                ddl_ureticiulke.DataSource = dm.UreticiUlkeleriGetir();
                 ddl_ureticiulke.DataBind();
                 cb_durum.Checked = true;
             }
@@ -26,31 +26,22 @@ namespace AksarayKahvecisiApplication.AdminLoginPanel
             Yonetici y = (Yonetici)Session["GirisYapanYonetici"];
             if (!string.IsNullOrEmpty(tb_isim.Text))
             {
-                if (tb_isim.Text.Length < 50)
+                Urunler ur = new Urunler();
+                ur.Isim = tb_isim.Text;
+                ur.Satici = tb_satici.Text;
+                ur.UreticiUlke = ddl_ureticiulke.SelectedItem.Value;
+                ur.Fiyat = Convert.ToDecimal(tb_fiyat.Text);
+                ur.Stok = int.Parse(tb_stok.Text);
+                ur.Satistami = cb_durum.Checked;
+                if (dm.UrunEkle(ur))
                 {
-                    Urunler ur = new Urunler();
-                    ur.Isim = tb_isim.Text;
-                    ur.Satici = tb_satici.Text;
-                    ur.UreticiUlke = Convert.ToInt32(ddl_ureticiulke.SelectedItem.Value);
-                    ur.Fiyat = Convert.ToDecimal(tb_fiyat.Text);
-                    ur.Stok = int.Parse(tb_stok.Text);
-                    ur.Satistami = cb_durum.Checked;
-                    if (dm.UrunEkle(ur))
-                    {
-                        Response.Redirect("UrunListesi.aspx");
-                        pnl_basarisiz.Visible = false;
-                        pnl_basarili.Visible = true;
-                    }
-                    else
-                    {
-                        lbl_mesaj.Text = "Ürün eklenirken bir hata oluştu";
-                        pnl_basarisiz.Visible = true;
-                        pnl_basarili.Visible = false;
-                    }
+                    Response.Redirect("UrunListesi.aspx");
+                    pnl_basarisiz.Visible = false;
+                    pnl_basarili.Visible = true;
                 }
                 else
                 {
-                    lbl_mesaj.Text = "Ürün adı 50 karakterden büyük olamaz";
+                    lbl_mesaj.Text = "Ürün eklenirken bir hata oluştu";
                     pnl_basarisiz.Visible = true;
                     pnl_basarili.Visible = false;
                 }
