@@ -293,7 +293,7 @@ namespace DataAccessLayer
 
         public List<UreticiUlkeler> UreticiUlkeleriGetir()
         {
-            
+
             try
             {
                 List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
@@ -323,7 +323,7 @@ namespace DataAccessLayer
 
         public List<UreticiUlkeler> UreticiUlkeleriGetir(bool durum)
         {
-            
+
             try
             {
                 List<UreticiUlkeler> uret = new List<UreticiUlkeler>();
@@ -609,7 +609,6 @@ namespace DataAccessLayer
 
         public bool SiparisOlustur(Siparisler s)
         {
-            //Database güncellemesi gerekli gibi
             try
             {
                 cmd.CommandText = "INSERT INTO Satislar(UrunID, TurID, AliciID, Miktar, Durum, Tarih) VALUES(@urunID, @turID, @aliciID, @miktar, @durum, @tarih)";
@@ -617,7 +616,7 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@urunID", s.UrunID);
                 cmd.Parameters.AddWithValue("@TurID", s.TurID);
                 cmd.Parameters.AddWithValue("@aliciID", s.AliciID);
-                cmd.Parameters.AddWithValue("@miktar", s.TurID);
+                cmd.Parameters.AddWithValue("@miktar", s.Miktar);
                 cmd.Parameters.AddWithValue("@durum", s.DurumID);
                 cmd.Parameters.AddWithValue("@tarih", s.Tarih);
                 con.Open();
@@ -627,6 +626,44 @@ namespace DataAccessLayer
             catch
             {
                 return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Siparisler> SiparisleriGetir(int id)
+        {
+            List<Siparisler> siparislers = new List<Siparisler>();
+            try
+            {
+
+                cmd.CommandText = "SELECT S.ID, U.Isim, UU.Isim, SD.Isim, S.AliciID, S.Miktar, S.Tarih, U.Fiyat FROM Satislar AS S JOIN Urunler AS U ON S.UrunID=U.ID JOIN UreticiUlkeler AS UU ON S.TurID=UU.ID JOIN SiparisDurumlari AS SD ON SD.ID=S.Durum WHERE S.AliciID= " + id;
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader okuyucu = cmd.ExecuteReader();
+                Siparisler sip;
+                while (okuyucu.Read())
+                {
+                    sip = new Siparisler();
+                    sip.ID = okuyucu.GetInt32(0);
+                    sip.UrunIsim = okuyucu.GetString(1);
+                    sip.TurIsim = okuyucu.GetString(2);
+                    sip.DurumIsim = okuyucu.GetString(3);
+                    sip.AliciID = okuyucu.GetInt32(4);
+                    sip.Miktar = okuyucu.GetInt32(5);
+                    sip.Tarih = okuyucu.GetDateTime(6);
+                    sip.Fiyat = okuyucu.GetDecimal(7);
+                    sip.ToplamFiyat = sip.Miktar * sip.Fiyat;
+                    siparislers.Add(sip);
+                }
+
+                return siparislers;
+            }
+            catch
+            {
+                return null;
             }
             finally
             {

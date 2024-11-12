@@ -83,6 +83,7 @@
     <Content Include="UyePanel\CSS\LoginStyle.css" />
     <Content Include="UyePanel\CSS\UyeMasterPageStyle.css" />
     <Content Include="UyePanel\Default.aspx" />
+    <Content Include="UyePanel\Siparislerim.aspx" />
     <Content Include="UyePanel\SiparisOlustur.aspx" />
     <Content Include="UyePanel\UyeGiris.aspx" />
     <Content Include="Web.config" />
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="UyePanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyePanel\Siparislerim.aspx.cs">
+      <DependentUpon>Siparislerim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyePanel\Siparislerim.aspx.designer.cs">
+      <DependentUpon>Siparislerim.aspx</DependentUpon>
     </Compile>
     <Compile Include="UyePanel\SiparisOlustur.aspx.cs">
       <DependentUpon>SiparisOlustur.aspx</DependentUpon>

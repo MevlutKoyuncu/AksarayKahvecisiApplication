@@ -24,7 +24,7 @@
         <div class="solmenu">
             <a href="Default.aspx">Anasayfa</a>
             <a href="SiparisOlustur.aspx">Sipariş Oluştur</a>
-            <a href="#">Siparişlerim</a>
+            <a href="Siparislerim.aspx">Siparişlerim</a>
             <a href="#">İletişime Geç</a>
         </div>
         <div class="icerik">
